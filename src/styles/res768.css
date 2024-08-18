@@ -1,0 +1,361 @@
+@media screen and (max-width:850px) {
+    
+    .home-hero{
+        padding: 25px;
+    }
+    .home-hero-img{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      
+      }
+    .home-hero-text{
+    color: #FFF;
+    text-align: end;
+    margin-top: 300px;
+    } 
+    .home-hero-text-s{
+        font-size: 150%;
+        font-weight: 550;
+    }
+    .home-hero-text-m{
+        font-size: 250%;
+        font-weight: 800;
+    }
+    .home-hero-text-l{
+        font-size: 350%;
+        font-weight: 900;
+    }
+
+
+
+
+
+
+
+    .home-ourserv-box{
+        
+        margin: 70px auto 0 auto;
+        padding-bottom: 150px;
+    }
+    .home-ourserv-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+    }
+    .home-ourserv-list-item{
+        width: 70%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+
+
+    .winter-collection-top-box{
+        max-width: 1920px;
+        height: 700px;
+        position: relative;
+    }
+    .winter-collection-top{
+        width: 90%;
+        height: 100%;
+        margin: 150px auto 20px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0px;
+        
+    }
+    .winter-collection-top img{
+        position: absolute;
+        width: 400px;
+        top: -240px;
+        left: auto;
+    }
+    .winter-collection-top h2{
+        margin-top: -200px;
+        font-size: 80px;
+        font-weight: 900;
+        margin-bottom: -20px;
+    }
+    .winter-collection-top span{
+        font-size: 17px;
+    }
+    .winter-collection-top h3{
+        font-size: 31px;
+        font-family:"Poppins" sans-serif;
+        font-weight: 750;
+    }
+    .winter-collection-top p{
+        width: 70%;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .winter-collection-top-text-cont{
+        width: 90%;
+        margin-top: 100px;
+    }
+    .winter-collection-head-text{
+        margin-top: -160px;
+        color: #FFF;
+    }
+    .winter-collection-extra-text{
+        color: #dcdada;
+    }
+    .winter-collection{
+        grid-template-columns: auto auto auto;
+    }
+    .winter-collectBtn{
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+    
+    .autumn-collection-top-box{
+        max-width: 1920px;
+        height: 700px;
+        position: relative;
+    }
+    .autumn-collection-top{
+        width: 90%;
+        height: 100%;
+        margin: 150px auto 20px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0px;
+        
+    }
+    .autumn-collection-top img{
+        position: absolute;
+        max-width: 400px;
+        top: -180px;
+        left: auto;
+    }
+    .autumn-collection-top h2{
+        margin-top: -180px;
+        font-size: 80px;
+        font-weight: 900;
+        margin-bottom: -20px;
+    }
+    .autumn-collection-top span{
+        font-size: 17px;
+    }
+    .autumn-collection-top h3{
+        font-size: 31px;
+        font-family:"Poppins" sans-serif;
+        font-weight: 750;
+    }
+    .autumn-collection-top p{
+        width: 70%;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .autumn-collection-top-text-cont{
+        width: 90%;
+        margin-top: 160px;
+    }
+    .autumn-collection-head-text{
+        margin-top: -140px;
+        color: #FFF;
+    }
+    .autumn-collection-extra-text{
+        color: #dcdada;
+    }
+    .autumn-collection{
+        grid-template-columns: auto auto auto;
+    }
+    .autumn-collectBtn{
+        margin-top: 10px;
+    }
+
+    
+
+
+
+
+
+
+
+    .summer-collection-top-box{
+        max-width: 1920px;
+        height: 700px;
+        position: relative;
+    }
+    .summer-collection-top{
+        width: 90%;
+        height: 100%;
+        margin: 150px auto 20px auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0px;
+        
+    }
+    .summer-collection-top img{
+        position: absolute;
+        width: 400px;
+        top: -180px;
+        left: auto;
+    }
+    .summer-collection-top h2{
+        margin-top: -180px;
+        font-size: 75px;
+        font-weight: 900;
+        margin-bottom: -20px;
+    }
+    .summer-collection-top span{
+        font-size: 17px;
+    }
+    .summer-collection-top h3{
+        font-size: 31px;
+        font-family:"Poppins" sans-serif;
+        font-weight: 750;
+    }
+    .summer-collection-top p{
+        width: 70%;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .summer-collection-top-text-cont{
+        width: 90%;
+        margin-top: 160px;
+    }
+    .summer-collection-head-text{
+        margin-top: -140px;
+        color: #FFF;
+    }
+    .summer-collection-extra-text{
+        color: #dcdada;
+    }
+    .summer-collection{
+        grid-template-columns: auto auto auto;
+    }
+
+
+
+
+
+    
+    .news-box{
+        width: 100%;
+      margin: 150px auto;
+    }
+    .news{
+      width: 90%;
+      margin: 0 auto;
+    }
+    .news-item{
+      border-radius: 15px;
+      transition: 300ms;
+    }
+    .news-top-text{
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .news-top-text h2{
+      text-align: center;
+      font-size: xx-large;
+      font-weight: 700;
+    }
+    .news-top-text span{
+        font-size: large;
+    }
+    .news-cont{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 5%;
+    
+    }
+    .news-item-created{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .news-item img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .news-item img:hover{
+      box-shadow: 1px 1px 30px gray;
+    }
+    .news-item-name h2{
+      font-size: large;
+      font-weight: 700;
+    }
+    .news-item-info p{
+      font-size: small;
+    }
+
+
+
+
+
+.footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    width: 100%;
+}
+.footer-logo img{
+    width: 50%;
+    margin: 0 auto;
+}
+.footer-logo p{
+    width: 80%;
+    text-align: center;
+    margin: 50px auto;
+}
+.footer-menu{
+    width: 100%;
+    text-align: center;
+}
+.footer-menu-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 50px auto;
+}
+.footer-contacts h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: medium;
+  }
+  .footer-contacts p{
+    width: 50%;
+    font-size: 13px;
+    margin: 0 auto 50px auto;
+  }
+  .footer-linkus{
+    width: 100%;
+  }
+  .footer-linkus h3{
+    text-align: center;
+  }
+  .footer-linkus input{
+    width: 100%;
+  }
+  .footer-linkus button{
+    top: 40%;
+  }
+
+
+}
