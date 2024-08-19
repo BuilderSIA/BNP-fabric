@@ -273,3 +273,28 @@
     }
 
     }
+
+
+    @media screen and (max-width:426px) {
+        .collection-sidebar-categories{
+            max-width: 425px;
+            position: fixed;
+            left: 0;
+            bottom: -10px;
+            background-color: #FFF;
+            width: 100%;
+            height: 50px;
+            box-shadow: 0px 0px 20px rgb(230, 229, 229);
+        }
+        .collection-sidebar-categories h2{
+            font-size: 65%;
+            box-shadow: none;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        .collection{
+            grid-template-columns: auto auto;
+            justify-content: center;
+            align-items: center;
+        }
+    }

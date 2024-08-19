@@ -745,11 +745,12 @@ li{
   align-items: start;
   gap: 10px;
 }
-.collection-sidebar-categories h2{
+.non-selected{
+  position: relative;
   cursor: pointer;
   transition: 400ms;
 }
-.collection-sidebar-categories h2:hover{
+.selected{
   font-size: 17px;
   color: #f42c37;
 }

@@ -31,16 +31,16 @@ const Collection = () => {
           {t("toplam")}
         </h2>
         <div className="collection-sidebar-categories">
-          <h2 onClick={()=>setCurrent(data.spring)}>
+          <h2 onClick={()=>setCurrent(data.spring)} className={current==data.spring?"selected":"non-selected"} >
             {t("spring")}
           </h2>
-          <h2 onClick={()=>setCurrent(data.winter)}>
+          <h2 onClick={()=>setCurrent(data.winter)} className={current==data.winter?"selected":"non-selected"}>
             {t("winter")}
           </h2>
-          <h2 onClick={()=>setCurrent(data.summer)}>
+          <h2 onClick={()=>setCurrent(data.summer)} className={current==data.summer?"selected":"non-selected"}>
             {t("summer")}
           </h2>
-          <h2 onClick={()=>setCurrent(data.autumn)}>
+          <h2 onClick={()=>setCurrent(data.autumn)} className={current==data.autumn?"selected":"non-selected"}>
             {t("autumn")}
           </h2>
         </div>
