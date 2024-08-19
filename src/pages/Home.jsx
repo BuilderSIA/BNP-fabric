@@ -3,14 +3,14 @@
 
 import { useEffect, useState } from "react";
 import { UseGlobalContext } from "../components/Context";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
 const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const {t,data} = UseGlobalContext()
-
+  const navigate = useNavigate();
 
 
   useEffect(() => {
@@ -137,13 +137,13 @@ console.log(width);
         
         <div className="winter-collection">
         {width>550?data.winter.map((item, index) => (
-    <div key={index} className="winter-item">
+    <div key={index} className="winter-item" onClick={()=>navigate(`/single/${item.id}`)}>
       <img src={item.image} alt={item.name} />
       <h4>{item.name}</h4>
     </div>
   )):
   data.winter.map((item, index) => (
-    index<3?<div key={index} className="winter-item">
+    index<3?<div key={index} className="winter-item" onClick={()=>navigate(`/single/${item.id}`)}>
     <img src={item.image} alt={item.name} />
     <h4>{item.name}</h4>
   </div>:null
@@ -188,13 +188,13 @@ console.log(width);
 
         <div className="autumn-collection">
         {width>550?data.autumn.map((item, index) => (
-    <div key={index} className="autumn-item">
+    <div key={index} className="autumn-item" onClick={()=>navigate(`/single/${item.id}`)}>
       <img src={item.image} alt={item.name} />
       <h4>{item.name}</h4>
     </div>
   )):
   data.autumn.map((item, index) => (
-    index<3?<div key={index} className="autumn-item">
+    index<3?<div key={index} className="autumn-item" onClick={()=>navigate(`/single/${item.id}`)}>
     <img src={item.image} alt={item.name} />
     <h4>{item.name}</h4>
   </div>:null
@@ -241,12 +241,12 @@ console.log(width);
 
         <div className="summer-collection">
         {width>550?data.summer.map((item, index) => (
-      <div key={index} className="summer-item">
+      <div key={index} className="summer-item" onClick={()=>navigate(`/single/${item.id}`)}>
         <img src={item.image} alt={item.name} />
         <h4>{item.name}</h4>
       </div>)):
       data.summer.map((item, index) => (
-        index<3?<div key={index} className="summer-item">
+        index<3?<div key={index} className="summer-item" onClick={()=>navigate(`/single/${item.id}`)}>
         <img src={item.image} alt={item.name} />
         <h4>{item.name}</h4>
       </div>:null))}
