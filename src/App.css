@@ -689,6 +689,60 @@ li{
 
 
 
+
+.collection-box{
+  max-width: 1920px;
+  margin: 65px auto 0 auto;
+  display: flex;
+
+}
+.collection-sidebar{
+  width: 20%;
+  border: 1px solid;
+}
+.collection-sidebar-search{
+  position: relative;
+}
+.collection-sidebar-search input{
+  width: 100%;
+  background: rgb(245,245,245);
+  background: linear-gradient(273deg, rgba(226,226,226,1) 40%, rgba(245,245,245,1) 73%);
+  border: none;
+  border-radius: 30px;
+  padding: 21px 45px 21px 40px;
+  outline: none;
+}
+.collection-sidebar-search button{
+  width: 150px;
+  height: 40px;
+  background-color: #f42c37;
+  color: #FFF;
+  text-transform: capitalize;
+  letter-spacing: -.45px;
+  font-weight: 400;
+  transition: 300ms;
+  border-radius: 25px;
+  box-shadow: 0 5px 25px #F42C3740;
+  position: absolute;
+  top: 20%;
+  right: 10px;
+}
+.collection{
+  width: 80%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:1770px) {
 
 .home-ourserv-box{
