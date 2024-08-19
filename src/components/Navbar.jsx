@@ -59,7 +59,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                <Link to={"/collection"}  onClick={handleNavItemClick}>
+                <Link to={'/collection'}  onClick={handleNavItemClick}>
                   {t("toplam")}
                 </Link>
                 </li>
