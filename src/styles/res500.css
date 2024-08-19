@@ -304,4 +304,35 @@
             width: 80%;
             height: 70%;
         }
+        
+
+
+
+
+        .single-info h2{
+            font-size: medium;
+        }
+        .single-info-table-column{
+            font-size: small;
+        }
+        
+
+
+
+
+        
+    }
+    
+
+
+
+
+    @media screen and (max-width:355px) {
+        .single-info h2{
+            font-size: small;
+        }
+        .single-info-table-column{
+            font-size: x-small;
+        }
+        
     }

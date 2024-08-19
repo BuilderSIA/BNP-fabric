@@ -402,5 +402,27 @@
     .collection-item h4{
         font-size: small;
     }
+
+
+
+
+    .single-box{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .single-box img{
+        width: 70%;
+        border-radius: 15px;
+    }
+    .single-info{
+        width: 90%;
+    }
+    .single-info h2{
+        text-align: center;
+    }
+
+
+
 }
 
