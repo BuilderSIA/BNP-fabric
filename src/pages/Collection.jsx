@@ -1,17 +1,21 @@
 import { useEffect, useState } from "react"
 import { UseGlobalContext } from "../components/Context"
+import { useNavigate } from "react-router-dom"
 
 
 const Collection = () => {
   const {data,t} = UseGlobalContext()
-  const [current,setCurrent] = useState([].concat(data.winter,data.spring,data.summer,data.autumn))
+  const [all,setAll] = useState([].concat(data.winter,data.spring,data.summer,data.autumn))
+  
+  const navigate = useNavigate();
 
-
-
+  
+  
 
 
   useEffect(()=>{
-  },[current])
+    
+  },[all])
 
 
   return (
@@ -24,15 +28,15 @@ const Collection = () => {
           </button>
         </div>
       </div>
-      <div className="collection">
-      {current.map((item, index) => (
-      <div key={index} className="">
-        <img src={item.image} alt={item.name} />
-        <h4>{item.name}</h4>
+      <div className="collection" >
+      {all.map((item, index) => (
+      <div key={index} className="collection-item" onClick={()=>navigate(`/single/${item.id}`)}> 
+        <img src={item?.image} alt={item?.name} />
+        <h4>{item?.name}</h4>
       </div>))
       }
       <h2>
-        {current.length}
+        {all.length}
       </h2>
 
       </div>

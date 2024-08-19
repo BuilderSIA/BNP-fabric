@@ -5,6 +5,9 @@
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
+html{
+  background-color: #FFF;
+}
 li{
   list-style: none;
 }
@@ -14,6 +17,7 @@ li{
   max-width: 1920px;
   margin: 0 auto;
   background-color: #FFF;
+
   display: flex;
   justify-content: center;
   align-items: start;
@@ -731,6 +735,40 @@ li{
   width: 80%;
   display: grid;
   grid-template-columns: auto auto auto auto;
+}
+
+.collection-item {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.collection-item img {
+  width: 70%;
+  border-radius: 20px;
+  display: block;
+}
+
+.collection-item h4 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  text-align: start;
+
+}
+.collection-item h4:hover{
+  color: rgb(57, 8, 8);
+}
+
+
+
+
+
+.single-box{
+  margin-top: 150px;
 }
 
 

@@ -8,6 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 import Collection from './pages/Collection';
 import Contacts from './pages/Contacts';
 import AboutUs from './pages/AboutUs';
+import SinglePage from './components/SinglePage';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
         <Route path='/collection' element={<Collection/>} />
         <Route path='/contacts' element={<Contacts/>} />
         <Route path='/aboutus' element={<AboutUs/>} />
+        <Route path='/single/:id' element={<SinglePage/>} />
       </Routes>
     </>
   )
