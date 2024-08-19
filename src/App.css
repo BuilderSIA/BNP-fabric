@@ -17,7 +17,6 @@ li{
   max-width: 1920px;
   margin: 0 auto;
   background-color: #FFF;
-
   display: flex;
   justify-content: center;
   align-items: start;
@@ -696,13 +695,12 @@ li{
 
 .collection-box{
   max-width: 1920px;
-  margin: 65px auto 0 auto;
+  margin: 85px auto 0 auto;
   display: flex;
 
 }
 .collection-sidebar{
-  width: 20%;
-  border: 1px solid;
+  width: 20%;padding: 10px;
 }
 .collection-sidebar-search{
   position: relative;
@@ -717,7 +715,7 @@ li{
   outline: none;
 }
 .collection-sidebar-search button{
-  width: 150px;
+  width: 70px;
   height: 40px;
   background-color: #f42c37;
   color: #FFF;
@@ -730,7 +728,35 @@ li{
   position: absolute;
   top: 20%;
   right: 10px;
+  padding-left: 5%;
 }
+.collection-sidebar-search button img{
+  width: 60%;
+}
+.collection-sidebar-categories-toptext{
+  font-size: large;
+  font-weight: 700;
+}
+.collection-sidebar-categories{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+.collection-sidebar-categories h2{
+  cursor: pointer;
+  transition: 400ms;
+}
+.collection-sidebar-categories h2:hover{
+  font-size: 17px;
+  color: #f42c37;
+}
+
+
+
+
 .collection{
   width: 80%;
   display: grid;
