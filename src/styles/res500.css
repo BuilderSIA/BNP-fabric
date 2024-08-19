@@ -293,8 +293,15 @@
             padding: 5px;
         }
         .collection{
-            grid-template-columns: auto auto;
+            width: 80%;
+            grid-template-columns: auto;
             justify-content: center;
             align-items: center;
+            margin-left: 20%;
+            margin-right: 0;
+        }
+        .collection-item img{
+            width: 80%;
+            height: 70%;
         }
     }

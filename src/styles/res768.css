@@ -380,12 +380,12 @@
         flex-direction: row;
         margin: 10px auto;
     }
-    .collection-sidebar-categories h2{
+    .non-selected{
         box-shadow: 0px 0px 20px rgb(229, 229, 229);
         border-radius: 15px;
         padding: 5px;
     }
-    .collection-sidebar-categories h2:hover{
+    .selected{
         box-shadow: 0px 0px 20px rgb(232, 203, 203);
     }
 
@@ -393,6 +393,11 @@
     .collection{
         grid-template-columns: auto auto auto;
         width: 100%;
+        margin-left: 5%;
+    }
+    .collection-item img{
+        width: 70%;
+        height: 70%;
     }
     .collection-item h4{
         font-size: small;
