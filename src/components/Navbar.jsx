@@ -40,9 +40,9 @@ const Navbar = () => {
     <div className="nav-box">
     <div className={shadow ? "navbarshadow":"navbar"}>
     <div className="navbar-container container">
-    <div className="navbar-logo">
+            <div className="navbar-logo">
               <Link to={"/"}>
-                <img src="/logo.png" alt="logo" />
+                <img src="/logo.png" alt="logo" className="navbar-logo-img" />
               </Link>
             </div>
             <input type="checkbox" name="" id=""/>

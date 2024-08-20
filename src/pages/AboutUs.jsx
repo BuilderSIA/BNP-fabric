@@ -2,6 +2,8 @@ import { UseGlobalContext } from "../components/Context"
 
 const AboutUs = () => {
     const {t} = UseGlobalContext();
+
+
   return (
     <div className="aboutus">
       <div className="aboutus-info">
