@@ -612,18 +612,19 @@ li{
 
 .footer{
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 70px auto;
   display: flex;
   justify-content: center;
   align-items: start;
-  gap: 50px;
+  gap: 100px;
   padding-bottom: 50px;
 }
 .footer-logo img{
+  margin-top: -70px;
   width: 300px;
 }
 .footer-logo p{
-  margin-top: 50px;
+  margin-top: 10px;
   font-size: small;
   width: 200px;
   color: #616884;
@@ -1106,7 +1107,7 @@ li{
 
 
   .footer{
-    gap: 1%;
+    gap: 2%;
   }
   
 

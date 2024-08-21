@@ -9,7 +9,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const {t,data} = UseGlobalContext()
+  const {t,data,sendMsg} = UseGlobalContext()
   const navigate = useNavigate();
 
 
@@ -390,15 +390,15 @@ console.log(width);
               {t("address")}
             </p>
           </div>
-          <div className="footer-linkus">
+          <form className="footer-linkus" onSubmit={()=>sendMsg()}>
             <h3>
               {t("linkus")}
             </h3>
-            <input type="text" placeholder={width>500?t("pochta"):null} />
-            <button>
+            <input type="text" placeholder={width>500?t("pochta"):null} id="email" />
+            <button type='submit'>
               {t("subscribe")}
             </button>
-          </div>
+          </form>
         </footer>
         
       </div>
