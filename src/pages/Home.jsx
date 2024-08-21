@@ -14,10 +14,6 @@ const Home = () => {
 
 
 
-  // const navWinter = () =>{
-
-  // }
-
 
 
   useEffect(() => {
@@ -129,7 +125,7 @@ console.log(width);
               <p>
                 {t("info")}
               </p>
-              <button className="winter-collectBtn">
+              <button className="winter-collectBtn" onClick={()=>navigate("/collection")}>
                 {t("toplam")}
               </button>
             </div>
@@ -180,7 +176,7 @@ console.log(width);
               <p>
                 {t("info")}
               </p>
-              <button className="autumn-collectBtn">
+              <button className="autumn-collectBtn" onClick={()=>navigate("/collection")}>
                 {t("toplam")}
               </button>
             </div>
@@ -233,7 +229,8 @@ console.log(width);
               <p>
                 {t("info")}
               </p>
-              <button className="summer-collectBtn">
+              
+              <button className="summer-collectBtn" onClick={()=>navigate("/collection")}>
                 {t("toplam")}
               </button>
             </div>

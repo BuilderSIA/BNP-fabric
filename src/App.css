@@ -431,7 +431,7 @@ li{
 }
 .summer-collection-top img{
   position: absolute;
-  width: 33%;
+  width: 31%;
   top: -180px;
   left: 25%;
   z-index: 0;
@@ -467,6 +467,7 @@ li{
   color: #307e7a;
   background: #FFF;
   margin-top: 50px;
+  
   cursor: pointer;
 }
 .summer-collection-head-text{
