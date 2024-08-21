@@ -759,10 +759,43 @@ li{
 }
 
 
-
-
 .collection{
   width: 80%;
+}
+.collection-top{
+  width: 95%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.collection-top-left{
+  width: 50%;
+}
+.collection-top-left-head{
+  font-size: x-large;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.collection-top-right{
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.collection-top-right-sort{
+  height: 40px;
+  background-color: #1e0506;
+  color: #FFF;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+
+
+.collection-list{
+  width: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto;
 }
@@ -901,6 +934,9 @@ li{
 .contacts-map{
   width: 50%;
   height: 85vh;
+  display: flex;
+        justify-content: center;
+        align-items: center;
 }
 .contacts-map-frame{
   width: 90%;

@@ -438,13 +438,13 @@
         scrollbar-width: thin;
     }
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
-        transform: translateX(-60vw);
+        transform: translateX(-50vw);
     }
 }
 
 
 
-@media screen and (max-width: 364px){
+@media screen and (max-width: 365px){
     .navbar .menu-items{
         padding-top: 100px;
         background: #fff;
@@ -474,7 +474,7 @@
         scrollbar-width: thin;
     }
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
-        transform: translateX(-55vw);
+        transform: translateX(0vw);
     }
     .navbar-logo{
         margin-top: 10px;

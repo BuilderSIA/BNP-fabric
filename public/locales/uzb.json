@@ -47,5 +47,15 @@
     "email":"Elektron pochtangiz",
     "number":"Telefon raqamingiz",
     "xabar":"Xabaringizni bu yerga kiriting",
-    "submit":"Yuborish"
+    "submit":"Yuborish",
+    "tadan":" 40 tadan ",
+    "korsatil":" ko'rsatilmoqda",
+    "showing":"",
+    "of":"",
+    "iz":"",
+    "otob":"",
+    "tartib1":"Dastlabki tartib",
+    "tartib2":"Mashxurlik bo'yicha",
+    "tartib3":"Narxlar: o'sish",
+    "tartib4":"Narxlar: kamayish"
 }

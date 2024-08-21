@@ -389,11 +389,14 @@
         box-shadow: 0px 0px 20px rgb(232, 203, 203);
     }
 
-
     .collection{
-        grid-template-columns: auto auto auto;
         width: 100%;
         margin-left: 5%;
+    }
+
+    .collection-list{
+        grid-template-columns: auto auto auto;
+        width: 100%;
     }
     .collection-item img{
         width: 70%;
@@ -440,6 +443,25 @@
         width: 100%;
         text-align: start;
     }
+
+
+
+
+
+    .contacts{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts-link{
+        width: 100%;
+    }
+    .contacts-map{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 
 

@@ -13,6 +13,13 @@ const Home = () => {
   const navigate = useNavigate();
 
 
+
+  // const navWinter = () =>{
+
+  // }
+
+
+
   useEffect(() => {
     // Function to update width when the window is resized
     const handleResize = () => setWidth(window.innerWidth);

@@ -59,15 +59,44 @@ const Collection = () => {
 
 
       <div className="collection" >
+        <div className="collection-top">
+          <div className="collection-top-left">
+            <h2 className="collection-top-left-head">
+                {t("toplam")}
+            </h2>
+            <div className="collection-top-left-shows">
+              <p>
+                {t("showing")}{t("otob")} {t("tadan")} 1-{current.length} {t("of")}{t("iz")} {t("korsatil")}
+              </p>
+            </div>
+          </div>
+          <div className="collection-top-right">
+            <select className="collection-top-right-sort">
+              <option value="">
+                {t("tartib1")}
+              </option>
+              <option value="">
+                {t("tartib2")}
+              </option>
+              <option value="">
+                {t("tartib3")}
+              </option>
+              <option value="">
+                {t("tartib4")}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div className="collection-list">
+
+        
       {current.map((item, index) => (
       <div key={index} className="collection-item" onClick={()=>navigate(`/single/${item.id}`)}> 
         <img src={item?.image} alt={item?.name} />
         <h4>{item?.name}</h4>
       </div>))
       }
-      <h2>
-        {current.length}
-      </h2>
+      </div>
       </div>
       </div>
       

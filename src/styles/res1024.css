@@ -200,5 +200,12 @@
 
 
 
+      .contacts-link{
+        gap: 25px;
+      }
+      .contacts-link-form{
+        gap: 25px;
+      }
+
       
 }

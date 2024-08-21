@@ -46,5 +46,15 @@
     "email":"Your email",
     "number":"Phone number",
     "xabar":"Enter your message here",
-    "submit":"Submit"
+    "submit":"Submit",
+    "tadan":"",
+    "korsatil":"",
+    "showing":"Showing",
+    "of":"of 40",
+    "iz":"",
+    "otob":"",
+    "tartib1":"Initial sort",
+    "tartib2":"By popularity",
+    "tartib3":"Prices: ascending",
+    "tartib4":"Prices: descending"
 }
