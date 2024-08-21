@@ -424,5 +424,24 @@
 
 
 
+
+
+    .aboutus{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .aboutus img{
+        width: 80%;
+    }
+    .aboutus-info{
+        width: 100%;
+    }
+    .aboutus-info-list{
+        width: 100%;
+        text-align: start;
+    }
+
+
+
 }
 

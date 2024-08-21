@@ -188,6 +188,26 @@
         font-size: 1.1rem;
         font-weight: 500;
     }
+    .navbarshadow .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-100vw);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        overflow: scroll;
+        scrollbar-width: thin;
+    }
+
+    .navbarshadow .menu-items li{
+        margin-bottom: 1.8rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
 
     .logo{
         position: absolute;
@@ -250,6 +270,20 @@
         overflow: scroll;
         scrollbar-width: thin;
     }
+    .navbarshadow .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-100vw);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        overflow: scroll;
+        scrollbar-width: thin;
+    }
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
         transform: translateX(-70vw);
     }
@@ -267,6 +301,20 @@
     
 @media screen and (max-width: 550px){
     .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-100vw);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        overflow: scroll;
+        scrollbar-width: thin;
+    }
+    .navbarshadow .menu-items{
         padding-top: 100px;
         background: #fff;
         height: 100vh;
@@ -305,6 +353,20 @@
         overflow: scroll;
         scrollbar-width: thin;
     }
+    .navbarshadow .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-100vw);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        overflow: scroll;
+        scrollbar-width: thin;
+    }
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
         transform: translateX(-65vw);
     }
@@ -312,6 +374,20 @@
 }
 @media screen and (max-width: 450px){
     .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-100vw);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        overflow: scroll;
+        scrollbar-width: thin;
+    }
+    .navbarshadow .menu-items{
         padding-top: 100px;
         background: #fff;
         height: 100vh;
@@ -347,6 +423,20 @@
         overflow: scroll;
         scrollbar-width: thin;
     }
+    .navbarshadow .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-100vw);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        overflow: scroll;
+        scrollbar-width: thin;
+    }
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
         transform: translateX(-60vw);
     }
@@ -356,6 +446,20 @@
 
 @media screen and (max-width: 364px){
     .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-100vw);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        overflow: scroll;
+        scrollbar-width: thin;
+    }
+    .navbarshadow .menu-items{
         padding-top: 100px;
         background: #fff;
         height: 100vh;
@@ -380,6 +484,20 @@
 
 @media screen and (max-width: 327px){
     .navbar .menu-items{
+        padding-top: 100px;
+        background: #fff;
+        height: 100vh;
+        max-width: 300px;
+        transform: translate(-100vw);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 40px;
+        transition: transform 0.5s ease-in-out;
+        overflow: scroll;
+        scrollbar-width: thin;
+    }
+    .navbarshadow .menu-items{
         padding-top: 100px;
         background: #fff;
         height: 100vh;
