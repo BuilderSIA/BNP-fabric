@@ -125,7 +125,10 @@ console.log(width);
               <p>
                 {t("info")}
               </p>
-              <button className="winter-collectBtn" onClick={()=>navigate("/collection")}>
+              <button className="winter-collectBtn" onClick={()=>{
+                navigate("/collection");
+                scrollTo(0,0)
+              }}>
                 {t("toplam")}
               </button>
             </div>
@@ -166,7 +169,7 @@ console.log(width);
               <h2>
                 100%
               </h2>
-              {t("sifat")}
+              <span>{t("sifat")}</span>
             </div>
             <img src="/autumn.png" alt="" />
             <div className="autumn-collection-top-text-cont">
@@ -176,7 +179,10 @@ console.log(width);
               <p>
                 {t("info")}
               </p>
-              <button className="autumn-collectBtn" onClick={()=>navigate("/collection")}>
+              <button className="autumn-collectBtn" onClick={()=>{
+                navigate("/collection")
+                scrollTo(0,0)
+              }}>
                 {t("toplam")}
               </button>
             </div>
@@ -219,7 +225,7 @@ console.log(width);
               <h2>
                 100%
               </h2>
-              {t("sifat")}
+              <span>{t("sifat")}</span>
             </div>
             <img src="/summer.png" alt="" />
             <div className="summer-collection-top-text-cont">
@@ -230,7 +236,10 @@ console.log(width);
                 {t("info")}
               </p>
               
-              <button className="summer-collectBtn" onClick={()=>navigate("/collection")}>
+              <button className="summer-collectBtn" onClick={()=>{
+                navigate("/collection")
+                scrollTo(0,0)
+                }}>
                 {t("toplam")}
               </button>
             </div>
@@ -279,11 +288,11 @@ console.log(width);
                 <img src="/news-1.png" alt="" />
                 <div className="news-item-created">
                   <p>
-                    10/05/2024
+                    {t("kimyaratdi")}
                   </p>
                   <span>&#183;</span>
                   <p>
-                    {t("kimyaratdi")}
+                    10/05/2024
                   </p>
                 </div>
                 <div className="news-item-name">
@@ -300,12 +309,13 @@ console.log(width);
               <div className="news-item">
                 <img src="/news-2.png" alt="" />
                 <div className="news-item-created">
+                  
                   <p>
-                    10/05/2024
+                    {t("kimyaratdi")}
                   </p>
                   <span>&#183;</span>
                   <p>
-                    {t("kimyaratdi")}
+                    10/05/2024
                   </p>
                 </div>
                 <div className="news-item-name">
@@ -322,12 +332,13 @@ console.log(width);
               <div className="news-item">
                 <img src="/news-3.png" alt="" />
                 <div className="news-item-created">
+                  
                   <p>
-                    10/05/2024
+                    {t("kimyaratdi")}
                   </p>
                   <span>&#183;</span>
                   <p>
-                    {t("kimyaratdi")}
+                    10/05/2024
                   </p>
                 </div>
                 <div className="news-item-name">

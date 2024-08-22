@@ -1,5 +1,7 @@
 @media screen and (max-width:850px) {
-    
+    .home{
+        overflow-x: hidden;
+    }
     .home-hero{
         padding: 25px;
     }
@@ -43,7 +45,7 @@
     .home-ourserv-list{
         display: grid;
         grid-template-columns: auto auto;
-        row-gap: 10px;
+        row-gap: 0px;
     }
     .home-ourserv-list-item{
         width: 70%;
@@ -51,7 +53,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
     }
 
 
@@ -59,38 +61,40 @@
 
     .winter-collection-top-box{
         max-width: 1920px;
-        height: 700px;
+        height: 600px;
         position: relative;
     }
     .winter-collection-top{
         width: 90%;
         height: 100%;
-        margin: 150px auto 20px auto;
+        margin: 120px auto 20px auto;
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         gap: 0px;
-        
     }
     .winter-collection-top img{
         position: absolute;
         width: 400px;
-        top: -240px;
+        top: -200px;
         left: auto;
     }
     .winter-collection-top h2{
+        display: none;
         margin-top: -200px;
         font-size: 80px;
         font-weight: 900;
         margin-bottom: -20px;
     }
     .winter-collection-top span{
+        display: none;
         font-size: 17px;
     }
     .winter-collection-top h3{
         font-size: 31px;
         font-family:"Poppins" sans-serif;
         font-weight: 750;
+        text-align: center;
     }
     .winter-collection-top p{
         width: 70%;
@@ -98,11 +102,15 @@
         font-weight: 300;
     }
     .winter-collection-top-text-cont{
-        width: 90%;
-        margin-top: 100px;
+        width: 100%;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
     }
     .winter-collection-head-text{
-        margin-top: -160px;
+        margin-top: -120px;
         color: #FFF;
     }
     .winter-collection-extra-text{
@@ -112,7 +120,7 @@
         grid-template-columns: auto auto auto;
     }
     .winter-collectBtn{
-        margin-top: 10px;
+        margin-top: 50px;
     }
 
 
@@ -124,7 +132,7 @@
     
     .autumn-collection-top-box{
         max-width: 1920px;
-        height: 700px;
+        height: 600px;
         position: relative;
     }
     .autumn-collection-top{
@@ -144,6 +152,7 @@
         left: auto;
     }
     .autumn-collection-top h2{
+        display: none;
         margin-top: -180px;
         font-size: 80px;
         font-weight: 900;
@@ -151,11 +160,13 @@
     }
     .autumn-collection-top span{
         font-size: 17px;
+        display: none;
     }
     .autumn-collection-top h3{
         font-size: 31px;
         font-family:"Poppins" sans-serif;
         font-weight: 750;
+        text-align: center;
     }
     .autumn-collection-top p{
         width: 70%;
@@ -163,8 +174,12 @@
         font-weight: 300;
     }
     .autumn-collection-top-text-cont{
-        width: 90%;
-        margin-top: 160px;
+        width: 100%;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
     }
     .autumn-collection-head-text{
         margin-top: -140px;
@@ -177,7 +192,7 @@
         grid-template-columns: auto auto auto;
     }
     .autumn-collectBtn{
-        margin-top: 10px;
+        margin-top: 50px;
     }
 
     
@@ -190,7 +205,7 @@
 
     .summer-collection-top-box{
         max-width: 1920px;
-        height: 700px;
+        height: 600px;
         position: relative;
     }
     .summer-collection-top{
@@ -206,7 +221,7 @@
     .summer-collection-top img{
         position: absolute;
         width: 400px;
-        top: -180px;
+        top: -200px;
         left: auto;
     }
     .summer-collection-top h2{
@@ -214,14 +229,17 @@
         font-size: 75px;
         font-weight: 900;
         margin-bottom: -20px;
+        display: none;
     }
     .summer-collection-top span{
         font-size: 17px;
+        display: none;
     }
     .summer-collection-top h3{
         font-size: 31px;
         font-family:"Poppins" sans-serif;
         font-weight: 750;
+        text-align: center;
     }
     .summer-collection-top p{
         width: 70%;
@@ -229,8 +247,12 @@
         font-weight: 300;
     }
     .summer-collection-top-text-cont{
-        width: 90%;
-        margin-top: 160px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+        margin-left: 0;
     }
     .summer-collection-head-text{
         margin-top: -140px;
@@ -242,7 +264,9 @@
     .summer-collection{
         grid-template-columns: auto auto auto;
     }
-
+    .summer-collectBtn{
+        margin-top: 50px;
+    }
 
 
 
@@ -250,7 +274,7 @@
     
     .news-box{
         width: 100%;
-      margin: 150px auto;
+      margin: 50px auto 150px auto;
     }
     .news{
       width: 90%;
@@ -259,6 +283,7 @@
     .news-item{
       border-radius: 15px;
       transition: 300ms;
+      margin-bottom: 10px;
     }
     .news-top-text{
       text-align: center;
@@ -283,14 +308,10 @@
     }
     .news-item-created{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      gap: 10px;
     }
-    .news-item img{
-        width: 70%;
-        margin: 0 auto;
-    }
+    
     .news-item img:hover{
       box-shadow: 1px 1px 30px gray;
     }
@@ -324,7 +345,7 @@
     margin: 50px auto;
 }
 .footer-menu{
-    width: 100%;
+    width: 70%;
     text-align: center;
 }
 .footer-menu-cont{
@@ -345,7 +366,7 @@
     margin: 0 auto 50px auto;
   }
   .footer-linkus{
-    width: 100%;
+    width: 80%;
   }
   .footer-linkus h3{
     text-align: center;
@@ -354,7 +375,7 @@
     width: 100%;
   }
   .footer-linkus button{
-    top: 40%;
+    top: 44px;
   }
 
 
@@ -374,11 +395,19 @@
         display: none;
     }
     .collection-sidebar-categories{
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         margin: 10px auto;
+    }
+    .collection-sidebar-search input{
+        width: 100%;
+    }
+    .collection-sidebar-search button{
+        right: 5px;
+        padding-left: 1%;
     }
     .non-selected{
         box-shadow: 0px 0px 20px rgb(229, 229, 229);

@@ -71,20 +71,9 @@ const Collection = () => {
             </div>
           </div>
           <div className="collection-top-right">
-            <select className="collection-top-right-sort">
-              <option value="">
-                {t("tartib1")}
-              </option>
-              <option value="">
-                {t("tartib2")}
-              </option>
-              <option value="">
-                {t("tartib3")}
-              </option>
-              <option value="">
-                {t("tartib4")}
-              </option>
-            </select>
+            <button className={current.length===[].concat(data.winter,data.spring,data.summer,data.autumn).length?"collection-top-right-sort-none":"collection-top-right-sort"}  onClick={()=>setCurrent([].concat(data.winter,data.spring,data.summer,data.autumn))}>
+              {t("hamma")}
+            </button>
           </div>
         </div>
         <div className="collection-list">

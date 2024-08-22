@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <div className="nav-box">
-    <div className={shadow ? "navbarshadow":"navbar"}>
+    <div className={shadow ? "navbar navbarshadow":"navbar"}>
     <div className="navbar-container container">
             <div className="navbar-logo">
               <Link to={"/"}>

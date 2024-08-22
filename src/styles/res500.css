@@ -63,7 +63,7 @@
 
         .winter-collection-top-box{
           max-width: 1920px;
-          height: 700px;
+          height: 600px;
           position: relative;
       }
       .winter-collection-top{
@@ -103,7 +103,7 @@
       }
       .winter-collection-top-text-cont{
           width: 90%;
-          margin-top: 200px;
+          margin-top: 240px;
       }
       .winter-collection-head-text{
           margin-top: -100px;
@@ -137,7 +137,7 @@
 
         .autumn-collection-top-box{
           max-width: 1920px;
-          height: 700px;
+          height: 600px;
           position: relative;
       }
       .autumn-collection-top{
@@ -177,7 +177,7 @@
     }
     .autumn-collection-top-text-cont{
         width: 90%;
-        margin-top: 200px;
+        margin-top: 240px;
     }
     .autumn-collection-head-text{
         margin-top: -100px;
@@ -211,7 +211,7 @@
 
         .summer-collection-top-box{
           max-width: 1920px;
-          height: 700px;
+          height: 600px;
           position: relative;
       }
       .summer-collection-top{
@@ -251,7 +251,7 @@
     }
     .summer-collection-top-text-cont{
         width: 90%;
-        margin-top: 200px;
+        margin-top: 240px;
     }
     .summer-collection-head-text{
         margin-top: -100px;
@@ -286,14 +286,15 @@
         width: 100%;
         height: 100px;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .collection-top-left{
-        width: 100%;
+        width: 50%;
 
     }
     .collection-top-right{
-        width: 100%;
+        width: 50%;
     }
     .collection-top-left-head{
         font-size: large;
@@ -303,7 +304,6 @@
     }
     .collection-top-right-sort{
         font-size: small;
-        width: 45%;
     }
 
 
@@ -358,7 +358,9 @@
         
 
 
-
+        .footer-linkus{
+            width: 100%;
+        }
 
         
     }
