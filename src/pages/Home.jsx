@@ -11,7 +11,9 @@ const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
   const {t,data,sendMsg} = UseGlobalContext()
   const navigate = useNavigate();
+  const [message,setMessage] = useState("")
 
+  
 
 
 
@@ -27,7 +29,6 @@ const Home = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-console.log(width);
 
 
   return (
@@ -401,15 +402,15 @@ console.log(width);
               {t("address")}
             </p>
           </div>
-          <form className="footer-linkus" onSubmit={()=>sendMsg()}>
+          <div className="footer-linkus">
             <h3>
               {t("linkus")}
             </h3>
-            <input type="text" placeholder={width>500?t("pochta"):null} id="email" />
-            <button type='submit'>
+            <input type="text" placeholder={width>500?t("pochta"):null} id="email" value={message} onChange={(e)=>setMessage(e.target.value)} />
+            <button  onClick={()=>sendMsg(message)}>
               {t("subscribe")}
             </button>
-          </form>
+          </div>
         </footer>
         
       </div>

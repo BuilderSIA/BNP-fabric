@@ -4,6 +4,7 @@ import { createContext, useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { collections } from "../data/data";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 export const AppContext = createContext();
 
@@ -21,13 +22,12 @@ export const AppProvider = ({children}) =>{
     }
 
 
-    const sendMsg = (event)=>{
-        event.preventDefault();
+    const sendMsg = (name)=>{
         const token = '7157344958:AAHLka3iQnKDPjyvobBZQrDB_Yd82wrFyuw';
         const chat_id =958496624;
         const url = `https://api.telegram.org/bot/${token}/sendMesssage`;
-        const name = event.target.value;
-        const surname = event.target.value;
+        
+        
         axios({
             url:url,
             method:"POST",
@@ -36,9 +36,9 @@ export const AppProvider = ({children}) =>{
                 "text":name
             }
         }).then((res)=>{
-            alert("Done")
+            toast.done("Done")
         }).catch((error)=>{
-            console.log(error);
+            toast.error("Error")
             
         })
     }
