@@ -1,15 +1,44 @@
 /* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/prop-types */
 
+import axios from 'axios';
 import { UseGlobalContext } from '../components/Context';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 const Contacts = () => {
 
   const {t} = UseGlobalContext();
   const [width, setWidth] = useState(window.innerWidth);
+
+
+
+  
+  const sendMsg = (event)=>{
+    event.preventDefault()
+    const token = '7157344958:AAHLka3iQnKDPjyvobBZQrDB_Yd82wrFyuw';
+    const chatId = "958496624";
+    const url = `https://api.telegram.org/bot${token}/sendMesssage`;
+    
+        // Assuming you have form inputs with ids 'name' and 'number'
+        const email = document.getElementById('email').value;
+        const number = document.getElementById('number').value;
+        // const notify = () => toast.success(`Send to ${name}`,{position:"top-right"});
+
+        axios.post(url,{
+          
+          chat_id: chatId,
+          text: `Email: ${email}, Number: ${number}`
+        })
+        .then(() => ()=>alert(`${t("send"),email}`))
+        .catch((error) => {
+          toast.error("Error");
+          console.log("Error", error);
+        });
+}
+
+
 
 
   useEffect(() => {
@@ -34,9 +63,9 @@ const Contacts = () => {
         <h2 className='contacts-link-headtext'>
           {t("boglanish")}
         </h2>
-        <form className='contacts-link-form' >
-          <input type="email" className='contacts-link-form-email' placeholder={t("email")} />
-          <input type="text" className='contacts-link-form-number' placeholder={t("number")} />
+        <form className='contacts-link-form' onSubmit={sendMsg} >
+          <input type="email" className='contacts-link-form-email' placeholder={t("email")} id='email' />
+          <input type="text" className='contacts-link-form-number' placeholder={t("number")} id='number' />
           <textarea type="text" className='contacts-link-form-text' placeholder={t("xabar")}/>
           <button className='contacts-link-form-submit'>
             {t("submit")}
