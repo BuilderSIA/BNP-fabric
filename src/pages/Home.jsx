@@ -4,16 +4,37 @@
 import { useEffect, useState } from "react";
 import { UseGlobalContext } from "../components/Context";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 
 
 const Home = () => {
   const [width, setWidth] = useState(window.innerWidth);
-  const {t,data,sendMsg} = UseGlobalContext()
+  const {t,data} = UseGlobalContext()
   const navigate = useNavigate();
-  const [message,setMessage] = useState("")
-
   
+
+  const sendMessage = (event) => {
+    event.preventDefault();
+    
+    const token = "7157344958:AAHLka3iQnKDPjyvobBZQrDB_Yd82wrFyuw";
+    const chatID = "958496624";
+    const url = `https://api.telegram.org/bot${token}/sendMessage`;
+    
+    // Assuming you have form inputs with ids 'name' and 'number'
+    const email = document.getElementById('email').value;
+    // const notify = () => toast.success(`Send to ${name}`,{position:"top-right"});
+
+    axios.post(url, {
+      chat_id: chatID,
+      text: `Name: ${email}`
+    }).then(() => ()=>{
+      alert(`${t("send"),email}`);
+    })
+    .catch((error) => {
+      console.log("Error", error);
+    });
+  }
 
 
 
@@ -402,15 +423,15 @@ const Home = () => {
               {t("address")}
             </p>
           </div>
-          <div className="footer-linkus">
+          <form className="footer-linkus" onSubmit={sendMessage}>
             <h3>
               {t("linkus")}
             </h3>
-            <input type="text" placeholder={width>500?t("pochta"):null} id="email" value={message} onChange={(e)=>setMessage(e.target.value)} />
-            <button  onClick={()=>sendMsg(message)}>
+            <input type="text" placeholder={width>500?t("pochta"):null} id="email" />
+            <button>
               {t("subscribe")}
             </button>
-          </div>
+          </form>
         </footer>
         
       </div>
