@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { UseGlobalContext } from "../components/Context";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 
 
@@ -29,7 +30,7 @@ const Home = () => {
       chat_id: chatID,
       text: `Name: ${email}`
     }).then(() => ()=>{
-      alert(`${t("send"),email}`);
+      toast.success(`${t("send"),email}`);
     })
     .catch((error) => {
       console.log("Error", error);

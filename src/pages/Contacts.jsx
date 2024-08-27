@@ -4,6 +4,7 @@ import axios from 'axios';
 import { UseGlobalContext } from '../components/Context';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 const Contacts = () => {
@@ -23,13 +24,14 @@ const Contacts = () => {
     // Assuming you have form inputs with ids 'name' and 'number'
     const email = document.getElementById('email').value;
     const number = document.getElementById('number').value;
+    const text = document.getElementById('text').value;
     // const notify = () => toast.success(`Send to ${name}`,{position:"top-right"});
 
     axios.post(url, {
       chat_id: chatID,
-      text: `Name: ${email}, Number: ${number}`
+      text: `Name: ${email}, Number: ${number}, Text${text}`
     }).then(() => ()=>{
-      alert(`${t("send"),email}`);
+      toast.success(`${t("send"),email}`);
     })
     .catch((error) => {
       console.log("Error", error);
@@ -63,7 +65,7 @@ const Contacts = () => {
         <form className='contacts-link-form' onSubmit={sendMessage} >
           <input type="email" className='contacts-link-form-email' placeholder={t("email")} id='email' />
           <input type="text" className='contacts-link-form-number' placeholder={t("number")} id='number' />
-          <textarea type="text" className='contacts-link-form-text' placeholder={t("xabar")}/>
+          <textarea type="text" className='contacts-link-form-text' placeholder={t("xabar")} id='text'/>
           <button className='contacts-link-form-submit'>
             {t("submit")}
           </button>
