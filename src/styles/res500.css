@@ -286,15 +286,17 @@
         width: 100%;
         height: 100px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .collection-top-left{
-        width: 50%;
+        width: 100%;
 
     }
     .collection-top-right{
-        width: 50%;
+        width: 100%;
+        justify-content: center;
     }
     .collection-top-left-head{
         font-size: large;
@@ -306,7 +308,14 @@
         font-size: small;
     }
 
+    .paginations{
+        width: 100%;
+        gap: 17px;
 
+    }
+    .page-item{
+        width: 20px;
+    }
 
     }
 

@@ -1,7 +1,9 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react"
 import { UseGlobalContext } from "../components/Context"
 import { Link, useNavigate } from "react-router-dom"
+import Pagination from "../components/Pagination";
 
 
 const Collection = () => {
@@ -9,6 +11,19 @@ const Collection = () => {
   const {data,t} = UseGlobalContext()
   const [current,setCurrent] = useState([].concat(data.winter,data.spring,data.summer,data.autumn))
   
+
+  const [currentPage,setCurrentPage] = useState(1);
+  const [itemPerPage,setItemPerPage] = useState(width>425?10:5);
+  
+  const indexOfLastItem = currentPage*itemPerPage;
+  const indexOfFirstitem = indexOfLastItem - itemPerPage;
+  const currentItems = current.slice(indexOfFirstitem,indexOfLastItem);
+  
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  
+
+
   const navigate = useNavigate();
 
   
@@ -28,14 +43,8 @@ const Collection = () => {
     <>
     <div className="collection-box">
       <div className="collection-sidebar">
-        <div className="collection-sidebar-search">
-          <input type="text" placeholder={t("search")} />
-          <button>
-          <img src="/search.png" alt="" />
-          </button>
-        </div>
         <h2 className="collection-sidebar-categories-toptext">
-          {t("toplam")}
+          {t("toplamlar")}
         </h2>
         <div className="collection-sidebar-categories">
           <h2 onClick={()=>setCurrent(data.spring)} className={current==data.spring?"selected":"non-selected"} >
@@ -66,7 +75,7 @@ const Collection = () => {
             </h2>
             <div className="collection-top-left-shows">
               <p>
-                {t("showing")}{t("otob")} {t("tadan")} 1-{current.length} {t("of")}{t("iz")} {t("korsatil")}
+                {t("showing")}{t("otob")} {t("tadan")} {indexOfFirstitem+1}-{indexOfLastItem} {t("of")}{t("iz")} {t("korsatil")}
               </p>
             </div>
           </div>
@@ -74,12 +83,13 @@ const Collection = () => {
             <button className={current.length===[].concat(data.winter,data.spring,data.summer,data.autumn).length?"collection-top-right-sort-none":"collection-top-right-sort"}  onClick={()=>setCurrent([].concat(data.winter,data.spring,data.summer,data.autumn))}>
               {t("hamma")}
             </button>
+            {current.length===[].concat(data.winter,data.spring,data.summer,data.autumn).length?<Pagination  itemPerPage={itemPerPage} totalItems={current.length} paginate={paginate}  />:null}
           </div>
         </div>
         <div className="collection-list">
 
         
-      {current.map((item, index) => (
+      {currentItems.map((item, index) => (
       <div key={index} className="collection-item" onClick={()=>navigate(`/single/${item.id}`)}> 
         <img src={item?.image} alt={item?.name} />
         <h4>{item?.name}</h4>
@@ -87,6 +97,8 @@ const Collection = () => {
       }
       </div>
       </div>
+     
+      
       </div>
       
       <footer className="footer">

@@ -1034,6 +1034,23 @@ li{
   margin-left: 60%;
 }
 
+.paginations-nav{
+  position: relative;
+}
+.paginations{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-item{
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
 
 
 
