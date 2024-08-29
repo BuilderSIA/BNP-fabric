@@ -80,10 +80,11 @@ const Collection = () => {
             </div>
           </div>
           <div className="collection-top-right">
+            <Pagination  itemPerPage={itemPerPage} totalItems={current.length} paginate={paginate}  />
             <button className={current.length===[].concat(data.winter,data.spring,data.summer,data.autumn).length?"collection-top-right-sort-none":"collection-top-right-sort"}  onClick={()=>setCurrent([].concat(data.winter,data.spring,data.summer,data.autumn))}>
               {t("hamma")}
             </button>
-            {current.length===[].concat(data.winter,data.spring,data.summer,data.autumn).length?<Pagination  itemPerPage={itemPerPage} totalItems={current.length} paginate={paginate}  />:null}
+            
           </div>
         </div>
         <div className="collection-list">
