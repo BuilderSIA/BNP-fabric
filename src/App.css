@@ -50,6 +50,7 @@ li{
   background: #423f3f;
 }
 .home-hero-img{
+  max-width: 800px;
   width: 60%;
   position: absolute;
   top: 0;
@@ -167,9 +168,10 @@ li{
 }
 .winter-collection-top img{
   position: absolute;
-  width: 30%;
-  top: -180px;
-  left: 25%;
+  width: 22%;
+  min-width: 400px;
+  top: -70px;
+  left: 35%;
   z-index: 0;
 }
 .winter-collection-top h2{
@@ -303,9 +305,10 @@ li{
 }
 .autumn-collection-top img{
   position: absolute;
-  max-width: 33%;
-  top: -200px;
-  left: 25%;
+  max-width: 25%;
+  top: -110px;
+  min-width: 400px;
+  left: 33%;
   z-index: 0;
   
 }
@@ -431,9 +434,10 @@ li{
 }
 .summer-collection-top img{
   position: absolute;
-  width: 31%;
-  top: -180px;
-  left: 25%;
+  width: 23%;
+  min-width: 400px;
+  top: -80px;
+  left: 33%;
   z-index: 0;
   
 }
