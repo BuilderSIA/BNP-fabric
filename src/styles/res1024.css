@@ -98,7 +98,7 @@
         font-size: x-large;
       }
       .autumn-collection-top img{
-        max-width: 35%;
+        width: 35%;
         position: absolute;
         top: -60px;
         left: 19%;

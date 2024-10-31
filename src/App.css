@@ -168,10 +168,10 @@ li{
 }
 .winter-collection-top img{
   position: absolute;
-  width: 30%;
+  width: 22%;
   min-width: 400px;
   top: -70px;
-  left: 35%;
+  left: 29%;
   z-index: 0;
 }
 .winter-collection-top h2{
@@ -305,10 +305,10 @@ li{
 }
 .autumn-collection-top img{
   position: absolute;
-  max-width: 30%;
-  top: -180px;
+  width: 23%;
+  top: -90px;
   min-width: 400px;
-  left: 27%;
+  left: 29%;
   z-index: 0;
   
 }
@@ -436,8 +436,8 @@ li{
   position: absolute;
   width: 23%;
   min-width: 400px;
-  top: -80px;
-  left: 33%;
+  top: -90px;
+  left: 29%;
   z-index: 0;
   
 }
@@ -1086,8 +1086,9 @@ li{
   }
   .winter-collection-top img{
     position: absolute;
-    top: -100px;
-    left: 20%;
+    width: 24%;
+    top: -70px;
+    left: 28%;
     
   }
   .winter-collection-top-text-cont{
@@ -1103,9 +1104,9 @@ li{
 
 
   .autumn-collection-top img{
-    width: 80%;
-    top: -100px;
-    left: 27%;
+    width: 27%;
+    top: -80px;
+    left: 29%;
   }
   .autumn-collection-top-text-cont{
     width: 35%;
@@ -1133,9 +1134,9 @@ li{
   }
   .summer-collection-top img{
     position: absolute;
-    width: 30%;
+    width: 26%;
     top: -110px;
-    left: 27%;
+    left: 29%;
   }
   .summer-collection-top-text-cont{
     width: 35%;
