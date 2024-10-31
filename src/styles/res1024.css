@@ -1,4 +1,4 @@
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1024px){
 
   .home-hero-img{
     width: 60%;
@@ -45,11 +45,10 @@
         font-size: x-large;
       }
       .winter-collection-top img{
-        width: 35%;
+        width: 25%;
         position: absolute;
-        top: -30px;
-        left: 23%;
-        
+        top: -70px;
+        left: 19%;
       }
       .winter-collection-top-text-cont{
         width: 45%;
@@ -101,8 +100,8 @@
       .autumn-collection-top img{
         max-width: 35%;
         position: absolute;
-        top: -30px;
-        left: 23%;
+        top: -60px;
+        left: 19%;
         
       }
       .autumn-collection-top-text-cont{
@@ -153,10 +152,10 @@
         font-size: x-large;
       }
       .summer-collection-top img{
-        width: 35%;
+        width: 30%;
         position: absolute;
-        top: -30px;
-        left: 23%;
+        top: -70px;
+        left: 20%;
         
       }
       .summer-collection-top-text-cont{
